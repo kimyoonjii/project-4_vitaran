@@ -187,6 +187,7 @@
   display: block;
 }
 .side-menu-bg .close {
+  display: block;
   position: relative;
   top: 40px;
   left: 65%;
