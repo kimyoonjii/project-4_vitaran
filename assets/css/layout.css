@@ -218,6 +218,9 @@
   position: relative;
   padding: 60px 31px 60px 40px;
 }
+.side-menu .logo-area {
+  display: flex;
+}
 .side-menu .logo {
   margin: 0 auto;
 }
