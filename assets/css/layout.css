@@ -238,6 +238,7 @@
   padding-left: 20px;
   border: 0;
   border-radius: 30px;
+  outline: none;
 }
 .side-menu .service-box .scarch-area .search-btn {
   position: absolute;
