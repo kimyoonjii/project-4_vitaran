@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/NotoSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../font/NotoSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../font/NotoSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+}

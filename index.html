@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="yoonji">
+  <meta name="" contents="웹 퍼블리셔가 되기 위한 작업 입니다.">
+  <title>project4-vitaran</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- 헤더영역 -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="group-flex">
+          <h1 class="logo"><a href=""><img src="./assets/images/logo-w.png" alt=""><span class="blind">비타란</span></a></h1>
+
+          <div class="menu-area">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="" class="nav">BRAND</a>
+                  <div class="sub-menu">
+                    <ul class="sub">
+                      <li class="sub-item"><a href="">BRAND</a></li>
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sub-img.jpeg" alt=""></a>
+                      </div>
+                    </ul>
+                  </div>
+              </li>
+              <li class="menu-item">
+                <a href="" class="nav">PDRN</a>
+                  <div class="sub-menu">
+                    <ul class="sub">
+                      <li class="sub-item"><a href="">CS-PDRN</a></li>
+                      <li class="sub-item"><a href="">주요원료</a></li>
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sub-img.jpeg" alt=""></a>
+                      </div>
+                    </ul>
+                  </div>
+              </li>
+              <li class="menu-item">
+                <a href="" class="nav">PRODUCTS</a>
+                  <div class="sub-menu">
+                    <ul class="sub">
+                      <li class="sub-item"><a href="">전체 제품</a></li>
+                      <li class="sub-item"><a href="">피부 고민별</a></li>
+                      <li class="sub-item"><a href="">제품 타입별</a></li>
+
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sub-img.jpeg" alt=""></a>
+                      </div>
+                    </ul>
+                  </div>
+              </li>
+              <li class="menu-item">
+                <a href="" class="nav">ENENT</a>
+                  <div class="sub-menu">
+                    <ul class="sub">
+                      <li class="sub-item"><a href="">ENENT</a></li>
+
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sub-img.jpeg" alt=""></a>
+                      </div>
+                    </ul>
+                  </div>
+              </li>
+              <li class="menu-item">
+                <a href="" class="nav">COMMUNITY</a>
+                  <div class="sub-menu">
+                    <ul class="sub">
+                      <li class="sub-item"><a href="">공지사항</a></li>
+                      <li class="sub-item"><a href="">상품 사용후기</a></li>
+
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sub-img.jpeg" alt=""></a>
+                      </div>                  
+                    </ul>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="icon-area">
+            <a href="" class="search"><img src="./assets/images/hd-icon-w-01.png" alt=""></a>
+            <a href="" class="my"><img src="./assets/images/hd-icon-w-02.png" alt=""></a>
+            <a href="" class="cart"><img src="./assets/images/hd-icon-w-03.png" alt=""></a>
+            <a href="" class="hamburge-btn"><span></span></a>
+          </div>
+
+          <!-- 햄버거버튼 사이드 메뉴 -->
+          <div class="side-menu-bg">
+            <a href="" class="close"><span></span><span></span></a>
+          </div>
+          <nav class="side-menu">
+            <div class="side-inner">
+                <h1 class="logo"><a href=""><img src="./assets/images/logo-b.png" alt=""></a></h1>
+
+                <div class="service-box">
+                  <div class="scarch-area">
+                    <fieldset>
+                      <!-- 폼에대한 제목 -->
+                      <legend class="blind">검색</legend>
+                      <div class="scarch-window">
+                        <input type="text" class="input-text" placeholder="">
+                        <button type="submit" class="search-btn" title="검색버튼"></button>
+                      </div>
+                    </fieldset>
+                    <div class="service-area">
+                      <a href="">로그인</a>
+                      <a href="">회원가입</a>
+                      <a href="">최근 본 상품</a>
+                      <a href="">고객센터</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="side-menu-area">
+                  <ul class="menu-list">
+                    <li class="item">
+                      <a href="" class="side-nav">BRAND<span></span></a>
+                        <ul class="sub">
+                          <li><a href="">BRAND</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                      <a href="" class="side-nav">PDRN<span></span></a>
+                        <ul class="sub">
+                          <li><a href="">CS-PDRN</a></li>
+                          <li><a href="">주요원료</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                      <a href="" class="side-nav">PRODUCTS<span></span></a>
+                      <ul class="sub">
+                        <li><a href="">전체 제품</a></li>
+                        <li><a href="">피부 고민별</a></li>
+                        <li><a href="">제품 타입별</a></li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <a href="" class="side-nav">EVENT<span></span></a>
+                      <ul class="sub">
+                        <li><a href="">EVENT</a></li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <a href="" class="side-nav">COMMUNITY<span></span></a>
+                      <ul class="sub">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">상품 사용후기</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="cs-area">
+                  <p class="title">CS CENTER</p>
+                  <p class="tell">070-4722-7563</p>
+                  <p class="time">070-4722-7563</p>
+                </div>
+
+             
+
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main class="container">
+      <section class="sc-visual">
+         <!-- sc-visual -->
+        <h2 class="blind">주요제품소개</h2>
+
+        <div class="swiper main-slide">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./assets/images/main-visual01.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./assets/images/main-visual02.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/main-visual03.png" alt="">
+            </div>
+          </div>
+          <div class="pagination"></div>
+      </div>
+      </section>
+
+      <section class="sc-intro">
+        <div class="common-inner">
+            <div class="intro-wrapper">
+              <div class="group-text-box">
+                <p class="left-tit">재생의학 연구 기술력으로,<br>프리미엄 피부 케어 솔루션</p>
+                <p class="right-tit">피부 재생 메커니즘에 대한 높은 이해도를 바탕으로<br>프로페셔널급 스킨케어를 제공합니다</p>
+              </div>
+              <a href="" class="more-btn">READ MORE<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+      </section>
+
+      <!-- sc-products -->
+      <section class="sc-products">
+        <div class="common-inner">
+          <div class="products-wrapper">
+            <div class="group-title">
+              <p class="term">제품</p>
+              <h2 class="headline">PRODUCTS</h2>
+              <a href="" class="more-btn">MORE<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+  
+            <div class="group-slide">
+              <div class="slide-cont">
+                <div class="swiper products-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products01.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#주름개선</span>
+                        <span class="tag">#PDRN</span>
+                        <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                        <p class="price"><span>88,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products02.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#주름미백</span>
+                        <span class="tag">#PDRN</span>
+                        <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                        <p class="price"><span>88,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products03.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#주름미백</span>
+                        <span class="tag">#PDRN</span>
+                        <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                        <p class="price"><span>88,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products04.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#주름개선</span>
+                        <span class="tag">#PDRN</span>
+                        <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                        <p class="price"><span>88,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products05.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#주름개선</span>
+                        <span class="tag">#PDRN</span>
+                        <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                        <p class="price"><span>88,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products06.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#PDRN</span>
+                        <span class="tag">#시카크림</span>
+                        <p class="title">퓨어센텔라 마데크림 200g 시카크림</p>
+                        <p class="price"><span>75,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products07.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#UV차단</span>
+                        <p class="title">선블럭 50ml</p>
+                        <p class="price"><span>30,000</span>원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="img-box">
+                        <a href=""><img src="./assets/images/sc-products08.png" alt=""></a>
+                      </div>
+                      <div class="text-box">
+                        <span class="tag">#PDRN</span>
+                        <span class="tag">#시카스팟크림</span>
+                        <p class="title">퓨어센텔라 마데외용크림 30g 시카크림</p>
+                        <p class="price"><span>88,000</span>원</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                   <!-- control -->
+                   <button class="btn prev" aria-label="이전슬라이드"><i class="fa-solid fa-chevron-left"></i></button>
+                   <button class="btn next" aria-label="다음슬라이드"><i class="fa-solid fa-chevron-right"></i></button>
+                   <div class="pagination"></div>
+              </div>
+            </div>
+          </div> 
+        </div>  
+      </section>
+
+      <!-- sc-story -->
+      <section class="sc-story">
+        <div class="common-inner">
+          <h2 class="headline">VITARAN STORY</h2>
+
+          <ul class="story-list">
+            <li class="story-item">
+              <a href="">
+                <img src="./assets/images/sc-story01.jpeg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/images/sc-srory02.jpeg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/images/sc-story03.jpeg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- sc-recommend -->
+      <section class="sc-recommend">
+        <div class="common-inner">
+          <h2 class="headline">RECOMMEND</h2>
+
+          <div class="group-slide">
+            <div class="slide-cont">
+              <div class="swiper recommend-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products01.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#주름개선</span>
+                      <span class="tag">#PDRN</span>
+                      <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                      <p class="price"><span>88,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products02.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#주름미백</span>
+                      <span class="tag">#PDRN</span>
+                      <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                      <p class="price"><span>88,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products03.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#주름미백</span>
+                      <span class="tag">#PDRN</span>
+                      <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                      <p class="price"><span>88,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products04.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#주름개선</span>
+                      <span class="tag">#PDRN</span>
+                      <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                      <p class="price"><span>88,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products05.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#주름개선</span>
+                      <span class="tag">#PDRN</span>
+                      <p class="title">비타란 A 레티놀 세럼 30ml - PDRN</p>
+                      <p class="price"><span>88,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products06.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#PDRN</span>
+                      <span class="tag">#시카크림</span>
+                      <p class="title">퓨어센텔라 마데크림 200g 시카크림</p>
+                      <p class="price"><span>75,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products07.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#UV차단</span>
+                      <p class="title">선블럭 50ml</p>
+                      <p class="price"><span>30,000</span>원</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <a href=""><img src="./assets/images/sc-products08.png" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                      <span class="tag">#PDRN</span>
+                      <span class="tag">#시카스팟크림</span>
+                      <p class="title">퓨어센텔라 마데외용크림 30g 시카크림</p>
+                      <p class="price"><span>88,000</span>원</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+             <!-- control -->
+             <button class="btn prev" aria-label="이전슬라이드"><i class="fa-solid fa-chevron-left"></i></button>
+             <button class="btn next" aria-label="다음슬라이드"><i class="fa-solid fa-chevron-right"></i></button>
+             <div class="pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-event">
+        <h2 class="blind">카카오 채널추가 이벤트</h2>
+
+        <div class="common-inner">
+          <div class="event-wrapper">
+            <div class="text-box">
+              <p class="term">이벤트</p>
+              <p class="title">EVENT</p>
+              <p class="desc">비타란 카카오 채널 추가 이벤트</p>
+            </div>
+            <div class="img-box">
+              <img src="./assets/images/sc-event01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- 푸터영역 -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="common-inner">
+          <ul class="notice-list">
+            <li class="notice-item"><a href="" class="item">이용약관</a></li>
+            <li class="notice-item"><a href="" class="item">개인정보처리방침</a></li>
+            <li class="notice-item"><a href="" class="item">이용안내</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="common-inner">
+          <div class="footer-wrap">
+            <div class="group-info">
+              <h1 class="logo"><a href=""><img src="./assets/images/logo-w.png" alt=""><span class="blind">비타란</span></a></h1>
+              <address class="addr-area">
+               <span>상호 (주)비알팜</span>
+               <span>대표자 김석순</span>
+               <span>주소 (26348) 강원도 원주시 지정면 신평로 13</span><br>
+               <span>사업자등록번호 122-81-87742</span>
+               <span>통신판매업신고 제2017-강원원주-00225호</span><br>
+               <span>개인정보보호책임자 최승찬</span>
+               <span>이메일</span>
+               <span>호스팅사업자: 카페24(주)</span>
+               <p class="copy">© 2023 VITARAN All Rights Reserved.</p>
+              </address>
+            </div>
+
+            <div class="group-css">
+              <p class="title">CS CENTER</p>
+              <p class="call">070-4722-7563</p>
+              <p class="hours">09:00~17:00</p>
+            </div>
+
+            <div class="group-box">
+              <div class="group-bank-info">
+                <p class="title">BANK INFO</p>
+                <p class="account">국민은행 656537-01-001014</p>
+                <p class="name">예금주 : ㈜비알팜</p>
+              </div>
+
+              <div class="group-family-site">
+                <a href="">Family site</a>
+                <button class="btn"><i class="fa-solid fa-chevron-down"></i></button>
+                <div class="family-box">
+                  <ul class="family-list">
+                    <li class="family-item">
+                      <a href="" class="item">비알팜</a>
+                    </li>
+                    <li>
+                      <a href="" class="item">비알코스</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      <!-- top버튼 -->
+      <div class="top-bnt">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+  </div>
+  
+</body>
+</html>
